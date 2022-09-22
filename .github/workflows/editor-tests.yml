@@ -25,8 +25,8 @@ jobs:
     - name: build dependencies
       run: yarn build
 
-    - name: install apm dependencies
-      run: yarn --cwd ./apm install
+    - name: build apm dependencies
+      run: yarn build:apm
 
     - name: Run tests
       uses: GabrielBB/xvfb-action@v1
